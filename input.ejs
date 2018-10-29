@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+<h1>Verification of Documents</h1>
+<form action="/veriy" method="post">
+
+<!--aadhar-->
+    <input type="number" name="aadhar" placeholder="aadhar" min="12" max="12">
+
+    <!--facebook-->
+   
+        <label for="url">Enter an https:// URL:</label>
+        <input type="url" name="url" id="url"
+               placeholder="https://facebook.com/xyz"
+               pattern="https://.*" size="30" required />
+
+     <!--twitter-->
+
+        <label for="url">Enter an https:// URL:</label>
+        <input type="url" name="url" id="url"
+               placeholder="https://twitter.com/xyz"
+               pattern="https://.*" size="30" required />
+
+     <!--linkedin-->
+
+               <label for="url">Enter an https:// URL:</label>
+        <input type="url" name="url" id="url"
+               placeholder="https://linkedin.com/xyz"
+               pattern="https://.*" size="30" required />
+    
+    <button>Submit</button>
+</form>
+ <% include ./partials/footer %>
